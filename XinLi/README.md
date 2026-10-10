@@ -6,7 +6,7 @@
 
 ## 编译与运行
 
-推荐使用 Xcode 16 或更新版本（此前实际验证环境为 Xcode 26.1.1）：
+推荐使用 Xcode 26.1.1（Swift 6.2.1），GitHub Actions 也固定使用此版本。Xcode 16.4 的 Swift 6.1.2 在 Release 编译时会出现编译器崩溃，暂不支持该工具链；应用最低运行版本仍为 macOS 14。
 
 1. 打开 `XinLi.xcodeproj`。
 2. 选择 **XinLi** scheme 和 **My Mac**。
@@ -134,7 +134,7 @@ scripts/                        编译打包、图标与发布工具
 
 应用显示名为「心历」，Swift 项目目录、模块、可执行文件及 Xcode 工程与 scheme 统一为 `XinLi`，构建产物仍为 `心历.app`。SwiftPM 资源包为 `XinLi_XinLi.bundle` 和 `XinLi_LunarCore.bundle`。
 
-兼容标识保留：Bundle ID `com.zfdang.WanNianLiSwift`、UserDefaults 键、`Application Support/WanNianLi` 日程数据和 `Application Support/ChronoCal` 背景缓存路径不改名。新环境变量 `XINLI_DATA_DIR` 优先，旧 `WANNIANLI_DATA_DIR` 继续兼容。本次项目更名不迁移或重写现有设置与数据；原 Objective-C 目录 `../WanNianLi/` 也不改名。
+兼容标识保留：Bundle ID `com.zfdang.WanNianLiSwift`、UserDefaults 键、`Application Support/WanNianLi` 日程数据和 `Application Support/ChronoCal` 背景缓存路径不改名。新环境变量 `XINLI_DATA_DIR` 优先，旧 `WANNIANLI_DATA_DIR` 继续兼容。本次项目更名不迁移或重写现有设置与数据；本仓库仅保留当前 Swift 工程，不包含原 Objective-C 工程。
 
 ## 开发资料清理与历史验证
 

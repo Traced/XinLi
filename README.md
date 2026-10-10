@@ -16,7 +16,7 @@
 
 ## 开始开发
 
-需要 macOS、Xcode 16 或更新版本及 Swift 6。应用最低运行版本为 macOS 14。
+推荐使用 Xcode 26.1.1（Swift 6.2.1），与本机已验证和 GitHub Actions 固定的工具链保持一致。Xcode 16.4 的 Swift 6.1.2 在 Release 编译时存在编译器崩溃，暂不支持该工具链。应用最低运行版本仍为 macOS 14。
 
 1. 克隆或完整下载这个仓库，保留目录结构。
 2. 打开 `XinLi/XinLi.xcodeproj`。

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build native 心历 with SwiftPM. macOS 14+, Xcode 16+ (Swift 6).
+# Build native 心历 with SwiftPM. Targets macOS 14+; use Xcode 26.1.1 (Swift 6.2.1).
 # Usage: scripts/build-app.sh [universal|arm64|x86_64]
 # Outputs build/心历.app and versioned ZIP / DMG packages.
 # Default ad-hoc build is not sandboxed, preserving existing
