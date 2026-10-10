@@ -1,0 +1,543 @@
+{
+  "model": "Astronomy Engine SearchSunLongitude",
+  "commit": "865d3da7d8112bbc7911238052c6af4aaf877181",
+  "sourceSHA256": "41248c7b1edbf9d11119528eef7455a6dc55abde9f1aab40d363015e956c1729",
+  "license": "MIT",
+  "verifiedYears": [
+    2025,
+    2027
+  ],
+  "referenceResolutionSeconds": 60,
+  "comparisons": [
+    {
+      "year": 2025,
+      "comparedTerms": 24,
+      "referenceURL": "https://www.hko.gov.hk/en/gts/astronomy/data/files/24SolarTerms_2025.xml",
+      "referenceSHA256": "fafb7f39e3228ad415486f5cfb116358f7abb03fae8dff5ee53f5e4043edc0f1",
+      "maxAbsoluteDifferenceSeconds": 43.226729,
+      "meanAbsoluteDifferenceSeconds": 18.15324525
+    },
+    {
+      "year": 2026,
+      "comparedTerms": 24,
+      "referenceURL": "https://www.hko.gov.hk/en/gts/astronomy/data/files/24SolarTerms_2026.xml",
+      "referenceSHA256": "3af98679f43d4d689941c55ba2a19f146ff111a6dff681235dc2b7110974ac74",
+      "maxAbsoluteDifferenceSeconds": 59.457159,
+      "meanAbsoluteDifferenceSeconds": 20.999536666666668
+    },
+    {
+      "year": 2027,
+      "comparedTerms": 24,
+      "referenceURL": "https://www.hko.gov.hk/en/gts/astronomy/data/files/24SolarTerms_2027.xml",
+      "referenceSHA256": "26f81a300bff724af49b80ad72c30e3cb48c9a5c35b3413308752dd75870ee37",
+      "maxAbsoluteDifferenceSeconds": 42.19047,
+      "meanAbsoluteDifferenceSeconds": 20.536282333333332
+    }
+  ],
+  "computedTerms": [
+    {
+      "year": 2025,
+      "index": 1,
+      "longitude": 285,
+      "computedUTC": "2025-01-05T02:32:41.099875+00:00",
+      "unixSeconds": 1736044361
+    },
+    {
+      "year": 2025,
+      "index": 2,
+      "longitude": 300,
+      "computedUTC": "2025-01-19T20:00:02.568588+00:00",
+      "unixSeconds": 1737316803
+    },
+    {
+      "year": 2025,
+      "index": 3,
+      "longitude": 315,
+      "computedUTC": "2025-02-03T14:10:29.634849+00:00",
+      "unixSeconds": 1738591830
+    },
+    {
+      "year": 2025,
+      "index": 4,
+      "longitude": 330,
+      "computedUTC": "2025-02-18T10:06:35.157907+00:00",
+      "unixSeconds": 1739873195
+    },
+    {
+      "year": 2025,
+      "index": 5,
+      "longitude": 345,
+      "computedUTC": "2025-03-05T08:07:17.119411+00:00",
+      "unixSeconds": 1741162037
+    },
+    {
+      "year": 2025,
+      "index": 6,
+      "longitude": 0,
+      "computedUTC": "2025-03-20T09:01:26.759182+00:00",
+      "unixSeconds": 1742461287
+    },
+    {
+      "year": 2025,
+      "index": 7,
+      "longitude": 15,
+      "computedUTC": "2025-04-04T12:48:34.186377+00:00",
+      "unixSeconds": 1743770914
+    },
+    {
+      "year": 2025,
+      "index": 8,
+      "longitude": 30,
+      "computedUTC": "2025-04-19T19:56:03.322257+00:00",
+      "unixSeconds": 1745092563
+    },
+    {
+      "year": 2025,
+      "index": 9,
+      "longitude": 45,
+      "computedUTC": "2025-05-05T05:57:21.708403+00:00",
+      "unixSeconds": 1746424642
+    },
+    {
+      "year": 2025,
+      "index": 10,
+      "longitude": 60,
+      "computedUTC": "2025-05-20T18:54:51.046115+00:00",
+      "unixSeconds": 1747767291
+    },
+    {
+      "year": 2025,
+      "index": 11,
+      "longitude": 75,
+      "computedUTC": "2025-06-05T09:56:40.819669+00:00",
+      "unixSeconds": 1749117401
+    },
+    {
+      "year": 2025,
+      "index": 12,
+      "longitude": 90,
+      "computedUTC": "2025-06-21T02:42:17.883267+00:00",
+      "unixSeconds": 1750473738
+    },
+    {
+      "year": 2025,
+      "index": 13,
+      "longitude": 105,
+      "computedUTC": "2025-07-06T20:04:51.895827+00:00",
+      "unixSeconds": 1751832292
+    },
+    {
+      "year": 2025,
+      "index": 14,
+      "longitude": 120,
+      "computedUTC": "2025-07-22T13:29:20.778590+00:00",
+      "unixSeconds": 1753190961
+    },
+    {
+      "year": 2025,
+      "index": 15,
+      "longitude": 135,
+      "computedUTC": "2025-08-07T05:51:16.773271+00:00",
+      "unixSeconds": 1754545877
+    },
+    {
+      "year": 2025,
+      "index": 16,
+      "longitude": 150,
+      "computedUTC": "2025-08-22T20:33:49.605592+00:00",
+      "unixSeconds": 1755894830
+    },
+    {
+      "year": 2025,
+      "index": 17,
+      "longitude": 165,
+      "computedUTC": "2025-09-07T08:51:50.124496+00:00",
+      "unixSeconds": 1757235110
+    },
+    {
+      "year": 2025,
+      "index": 18,
+      "longitude": 180,
+      "computedUTC": "2025-09-22T18:19:34.559675+00:00",
+      "unixSeconds": 1758565175
+    },
+    {
+      "year": 2025,
+      "index": 19,
+      "longitude": 195,
+      "computedUTC": "2025-10-08T00:41:21.049473+00:00",
+      "unixSeconds": 1759884081
+    },
+    {
+      "year": 2025,
+      "index": 20,
+      "longitude": 210,
+      "computedUTC": "2025-10-23T03:51:20.321340+00:00",
+      "unixSeconds": 1761191480
+    },
+    {
+      "year": 2025,
+      "index": 21,
+      "longitude": 225,
+      "computedUTC": "2025-11-07T04:04:15.490249+00:00",
+      "unixSeconds": 1762488255
+    },
+    {
+      "year": 2025,
+      "index": 22,
+      "longitude": 240,
+      "computedUTC": "2025-11-22T01:35:50.103971+00:00",
+      "unixSeconds": 1763775350
+    },
+    {
+      "year": 2025,
+      "index": 23,
+      "longitude": 255,
+      "computedUTC": "2025-12-06T21:04:38.611578+00:00",
+      "unixSeconds": 1765055079
+    },
+    {
+      "year": 2025,
+      "index": 24,
+      "longitude": 270,
+      "computedUTC": "2025-12-21T15:03:03.907280+00:00",
+      "unixSeconds": 1766329384
+    },
+    {
+      "year": 2026,
+      "index": 1,
+      "longitude": 285,
+      "computedUTC": "2026-01-05T08:23:03.114483+00:00",
+      "unixSeconds": 1767601383
+    },
+    {
+      "year": 2026,
+      "index": 2,
+      "longitude": 300,
+      "computedUTC": "2026-01-20T01:44:42.360169+00:00",
+      "unixSeconds": 1768873482
+    },
+    {
+      "year": 2026,
+      "index": 3,
+      "longitude": 315,
+      "computedUTC": "2026-02-03T20:01:54.541403+00:00",
+      "unixSeconds": 1770148915
+    },
+    {
+      "year": 2026,
+      "index": 4,
+      "longitude": 330,
+      "computedUTC": "2026-02-18T15:51:32.389527+00:00",
+      "unixSeconds": 1771429892
+    },
+    {
+      "year": 2026,
+      "index": 5,
+      "longitude": 345,
+      "computedUTC": "2026-03-05T13:58:43.971600+00:00",
+      "unixSeconds": 1772719124
+    },
+    {
+      "year": 2026,
+      "index": 6,
+      "longitude": 0,
+      "computedUTC": "2026-03-20T14:45:36.044423+00:00",
+      "unixSeconds": 1774017936
+    },
+    {
+      "year": 2026,
+      "index": 7,
+      "longitude": 15,
+      "computedUTC": "2026-04-04T18:39:59.161916+00:00",
+      "unixSeconds": 1775327999
+    },
+    {
+      "year": 2026,
+      "index": 8,
+      "longitude": 30,
+      "computedUTC": "2026-04-20T01:39:09.897847+00:00",
+      "unixSeconds": 1776649150
+    },
+    {
+      "year": 2026,
+      "index": 9,
+      "longitude": 45,
+      "computedUTC": "2026-05-05T11:49:09.475687+00:00",
+      "unixSeconds": 1777981749
+    },
+    {
+      "year": 2026,
+      "index": 10,
+      "longitude": 60,
+      "computedUTC": "2026-05-21T00:37:16.958990+00:00",
+      "unixSeconds": 1779323837
+    },
+    {
+      "year": 2026,
+      "index": 11,
+      "longitude": 75,
+      "computedUTC": "2026-06-05T15:48:59.457159+00:00",
+      "unixSeconds": 1780674539
+    },
+    {
+      "year": 2026,
+      "index": 12,
+      "longitude": 90,
+      "computedUTC": "2026-06-21T08:25:00.316751+00:00",
+      "unixSeconds": 1782030300
+    },
+    {
+      "year": 2026,
+      "index": 13,
+      "longitude": 105,
+      "computedUTC": "2026-07-07T01:57:22.386016+00:00",
+      "unixSeconds": 1783389442
+    },
+    {
+      "year": 2026,
+      "index": 14,
+      "longitude": 120,
+      "computedUTC": "2026-07-22T19:13:18.217586+00:00",
+      "unixSeconds": 1784747598
+    },
+    {
+      "year": 2026,
+      "index": 15,
+      "longitude": 135,
+      "computedUTC": "2026-08-07T11:42:56.663996+00:00",
+      "unixSeconds": 1786102977
+    },
+    {
+      "year": 2026,
+      "index": 16,
+      "longitude": 150,
+      "computedUTC": "2026-08-23T02:18:58.412595+00:00",
+      "unixSeconds": 1787451538
+    },
+    {
+      "year": 2026,
+      "index": 17,
+      "longitude": 165,
+      "computedUTC": "2026-09-07T14:41:44.296470+00:00",
+      "unixSeconds": 1788792104
+    },
+    {
+      "year": 2026,
+      "index": 18,
+      "longitude": 180,
+      "computedUTC": "2026-09-23T00:05:38.617434+00:00",
+      "unixSeconds": 1790121939
+    },
+    {
+      "year": 2026,
+      "index": 19,
+      "longitude": 195,
+      "computedUTC": "2026-10-08T06:29:58.055584+00:00",
+      "unixSeconds": 1791440998
+    },
+    {
+      "year": 2026,
+      "index": 20,
+      "longitude": 210,
+      "computedUTC": "2026-10-23T09:38:24.266734+00:00",
+      "unixSeconds": 1792748304
+    },
+    {
+      "year": 2026,
+      "index": 21,
+      "longitude": 225,
+      "computedUTC": "2026-11-07T09:52:33.362863+00:00",
+      "unixSeconds": 1794045153
+    },
+    {
+      "year": 2026,
+      "index": 22,
+      "longitude": 240,
+      "computedUTC": "2026-11-22T07:23:34.115028+00:00",
+      "unixSeconds": 1795332214
+    },
+    {
+      "year": 2026,
+      "index": 23,
+      "longitude": 255,
+      "computedUTC": "2026-12-07T02:52:47.191147+00:00",
+      "unixSeconds": 1796611967
+    },
+    {
+      "year": 2026,
+      "index": 24,
+      "longitude": 270,
+      "computedUTC": "2026-12-21T20:50:22.187024+00:00",
+      "unixSeconds": 1797886222
+    },
+    {
+      "year": 2027,
+      "index": 1,
+      "longitude": 285,
+      "computedUTC": "2027-01-05T14:10:07.756479+00:00",
+      "unixSeconds": 1799158208
+    },
+    {
+      "year": 2027,
+      "index": 2,
+      "longitude": 300,
+      "computedUTC": "2027-01-20T07:30:02.652757+00:00",
+      "unixSeconds": 1800430203
+    },
+    {
+      "year": 2027,
+      "index": 3,
+      "longitude": 315,
+      "computedUTC": "2027-02-04T01:46:24.431123+00:00",
+      "unixSeconds": 1801705584
+    },
+    {
+      "year": 2027,
+      "index": 4,
+      "longitude": 330,
+      "computedUTC": "2027-02-18T21:33:42.190470+00:00",
+      "unixSeconds": 1802986422
+    },
+    {
+      "year": 2027,
+      "index": 5,
+      "longitude": 345,
+      "computedUTC": "2027-03-05T19:39:28.129789+00:00",
+      "unixSeconds": 1804275568
+    },
+    {
+      "year": 2027,
+      "index": 6,
+      "longitude": 0,
+      "computedUTC": "2027-03-20T20:24:43.453946+00:00",
+      "unixSeconds": 1805574283
+    },
+    {
+      "year": 2027,
+      "index": 7,
+      "longitude": 15,
+      "computedUTC": "2027-04-05T00:17:09.080347+00:00",
+      "unixSeconds": 1806884229
+    },
+    {
+      "year": 2027,
+      "index": 8,
+      "longitude": 30,
+      "computedUTC": "2027-04-20T07:17:22.639086+00:00",
+      "unixSeconds": 1808205443
+    },
+    {
+      "year": 2027,
+      "index": 9,
+      "longitude": 45,
+      "computedUTC": "2027-05-05T17:24:38.617194+00:00",
+      "unixSeconds": 1809537879
+    },
+    {
+      "year": 2027,
+      "index": 10,
+      "longitude": 60,
+      "computedUTC": "2027-05-21T06:17:54.413406+00:00",
+      "unixSeconds": 1810880274
+    },
+    {
+      "year": 2027,
+      "index": 11,
+      "longitude": 75,
+      "computedUTC": "2027-06-05T21:25:22.586305+00:00",
+      "unixSeconds": 1812230723
+    },
+    {
+      "year": 2027,
+      "index": 12,
+      "longitude": 90,
+      "computedUTC": "2027-06-21T14:10:33.792654+00:00",
+      "unixSeconds": 1813587034
+    },
+    {
+      "year": 2027,
+      "index": 13,
+      "longitude": 105,
+      "computedUTC": "2027-07-07T07:36:49.151264+00:00",
+      "unixSeconds": 1814945809
+    },
+    {
+      "year": 2027,
+      "index": 14,
+      "longitude": 120,
+      "computedUTC": "2027-07-23T01:04:23.853606+00:00",
+      "unixSeconds": 1816304664
+    },
+    {
+      "year": 2027,
+      "index": 15,
+      "longitude": 135,
+      "computedUTC": "2027-08-07T17:26:25.904232+00:00",
+      "unixSeconds": 1817659586
+    },
+    {
+      "year": 2027,
+      "index": 16,
+      "longitude": 150,
+      "computedUTC": "2027-08-23T08:13:53.869048+00:00",
+      "unixSeconds": 1819008834
+    },
+    {
+      "year": 2027,
+      "index": 17,
+      "longitude": 165,
+      "computedUTC": "2027-09-07T20:28:02.373463+00:00",
+      "unixSeconds": 1820348882
+    },
+    {
+      "year": 2027,
+      "index": 18,
+      "longitude": 180,
+      "computedUTC": "2027-09-23T06:01:18.345459+00:00",
+      "unixSeconds": 1821679278
+    },
+    {
+      "year": 2027,
+      "index": 19,
+      "longitude": 195,
+      "computedUTC": "2027-10-08T12:16:48.445421+00:00",
+      "unixSeconds": 1822997808
+    },
+    {
+      "year": 2027,
+      "index": 20,
+      "longitude": 210,
+      "computedUTC": "2027-10-23T15:32:44.734129+00:00",
+      "unixSeconds": 1824305565
+    },
+    {
+      "year": 2027,
+      "index": 21,
+      "longitude": 225,
+      "computedUTC": "2027-11-07T15:38:35.026234+00:00",
+      "unixSeconds": 1825601915
+    },
+    {
+      "year": 2027,
+      "index": 22,
+      "longitude": 240,
+      "computedUTC": "2027-11-22T13:16:20.719819+00:00",
+      "unixSeconds": 1826889381
+    },
+    {
+      "year": 2027,
+      "index": 23,
+      "longitude": 255,
+      "computedUTC": "2027-12-07T08:37:51.994796+00:00",
+      "unixSeconds": 1828168672
+    },
+    {
+      "year": 2027,
+      "index": 24,
+      "longitude": 270,
+      "computedUTC": "2027-12-22T02:42:18.622887+00:00",
+      "unixSeconds": 1829443339
+    }
+  ]
+}

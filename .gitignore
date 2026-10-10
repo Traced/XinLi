@@ -1,0 +1,31 @@
+# Build output and local workspace state
+.build/
+build/
+DerivedData/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+.DS_Store
+__pycache__/
+*.pyc
+
+# Distribution artifacts belong in GitHub Releases
+*.app/
+*.dmg
+*.zip
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.key
+*.pem
+*.mobileprovision
+*.provisionprofile
+
+# Runtime user data
+*.store
+*.store-shm
+*.store-wal

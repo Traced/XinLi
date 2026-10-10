@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/6tail/lunar-go",
+  "version": "v1.4.6",
+  "commit": "dd82a5bc13f4e08417cb78b58f7a7fd90c1fd649",
+  "moduleSum": "h1:APCXi1PC3Q7gZt6RJyug/ZdZcwX2qOkzIsZIcjCQdHY=",
+  "goModSum": "h1:mMvCby9aWTSmsZjnv+5EOW7taJFV4RsjNcQLRl/3whY=",
+  "license": "MIT"
+}

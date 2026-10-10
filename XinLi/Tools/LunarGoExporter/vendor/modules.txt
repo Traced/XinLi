@@ -1,0 +1,9 @@
+# github.com/6tail/lunar-go v1.4.6
+## explicit; go 1.14
+github.com/6tail/lunar-go/FotoUtil
+github.com/6tail/lunar-go/HolidayUtil
+github.com/6tail/lunar-go/LunarUtil
+github.com/6tail/lunar-go/ShouXingUtil
+github.com/6tail/lunar-go/SolarUtil
+github.com/6tail/lunar-go/TaoUtil
+github.com/6tail/lunar-go/calendar

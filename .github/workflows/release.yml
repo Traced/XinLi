@@ -1,0 +1,107 @@
+# 构建心历（原生 Swift 版万年历）
+# - 推送 tag：构建 Apple Silicon 和 Intel 两个版本，发布到 GitHub Release
+# - main / Pull request / 手动运行：只构建，结果作为 Actions artifact 上传
+name: Build & Release
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    paths:
+      - "XinLi/**"
+      - "docs/data/holidays.json"
+      - ".github/workflows/release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 同一分支 / PR 的新提交会取消还在运行的旧构建；tag 的发布构建不会被取消
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
+
+jobs:
+  build:
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: XinLi
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        run: swift --version
+
+      - name: Version
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            RAW_VERSION="${GITHUB_REF_NAME#v}"
+          else
+            RAW_VERSION=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' Resources/Info.plist)
+          fi
+          if [[ ! "$RAW_VERSION" =~ ^[0-9]+(\.[0-9]+){0,2}$ ]]; then
+            echo "Invalid version: $RAW_VERSION (expected v1, v1.2, or v1.2.3)" >&2
+            exit 1
+          fi
+          IFS=. read -r MAJOR MINOR PATCH <<< "$RAW_VERSION"
+          VERSION="$MAJOR.${MINOR:-0}.${PATCH:-0}"
+          DISPLAY_VERSION=$VERSION
+          while [[ "$DISPLAY_VERSION" == *.0 ]]; do DISPLAY_VERSION=${DISPLAY_VERSION%.0}; done
+          DISPLAY_VERSION="v$DISPLAY_VERSION"
+          echo "DISPLAY_VERSION=$DISPLAY_VERSION" >> "$GITHUB_ENV"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "Version: $VERSION"
+
+      - name: Build Apple Silicon
+        run: ./scripts/build-app.sh arm64
+
+      - name: Build Intel
+        run: ./scripts/build-app.sh x86_64
+
+      - name: Check
+        run: |
+          ls -l build/*.zip build/*.dmg
+          for zip in build/*.zip; do
+            dir=$(mktemp -d)
+            ditto -x -k "$zip" "$dir"
+            echo "$zip: $(lipo -archs "$dir/心历.app/Contents/MacOS/XinLi")," \
+                 "version $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$dir/心历.app/Contents/Info.plist")"
+            codesign --verify --deep --strict "$dir/心历.app"
+            rm -rf "$dir"
+          done
+          for dmg in build/*.dmg; do
+            hdiutil verify "$dmg"
+          done
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: XinLi-${{ env.DISPLAY_VERSION }}-${{ github.sha }}
+          path: |
+            XinLi/build/*.zip
+            XinLi/build/*.dmg
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat > "$RUNNER_TEMP/notes.md" <<NOTES
+          心历 ${GITHUB_REF_NAME}（需要 macOS 14 或更新版本）
+
+          - **心历-${DISPLAY_VERSION}-AppleSilicon.dmg / .zip**：M 系列芯片的 Mac
+          - **心历-${DISPLAY_VERSION}-Intel.dmg / .zip**：Intel 芯片的 Mac
+
+          分享完整 DMG 或原始 ZIP，不要直接发送 .app。打开 DMG 后退出旧版，将心历拖到 Applications，从“应用程序”启动。
+
+          当前应用使用本机临时签名，未经过 Developer ID 签名及 Apple 公证，DMG 不会解除系统安全检查。
+          如果提示无法验证开发者，在确认来源可信且未被修改后，可按照 Apple 说明前往“系统设置 → 隐私与安全性”选择心历对应的“仍要打开”：
+          https://support.apple.com/zh-cn/102445
+          NOTES
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" build/*.zip build/*.dmg --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" build/*.zip build/*.dmg --title "心历 ${GITHUB_REF_NAME}" --notes-file "$RUNNER_TEMP/notes.md"
+          fi

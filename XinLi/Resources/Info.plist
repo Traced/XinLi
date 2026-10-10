@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleExecutable</key>
+	<string>XinLi</string>
+	<key>CFBundleIconFile</key>
+	<string>ChronoCalIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.zfdang.WanNianLiSwift</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>心历</string>
+	<key>CFBundleDisplayName</key>
+	<string>心历</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>公众号：随心记事</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>心历需要读取和管理您选择的系统日历，以显示、创建、编辑和删除日程。未授权时仍可使用本地日程和万年历。</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>心历使用系统日历显示和管理您授权的日程。</string>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>心历使用本地通知提醒您即将开始的日程与任务。</string>
+</dict>
+</plist>
